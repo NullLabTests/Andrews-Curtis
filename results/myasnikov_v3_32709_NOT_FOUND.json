@@ -1,0 +1,23 @@
+{
+  "run_id": "myasnikov_v3_32709",
+  "found": false,
+  "presentation": "myasnikov",
+  "description": "Known AC-trivializable",
+  "params": {
+    "beam_width": 100,
+    "max_depth": 20,
+    "max_states": 200000,
+    "use_substitution": true,
+    "use_generator_moves": true,
+    "timeout": 60.0
+  },
+  "stats": {
+    "states_explored": 27559,
+    "depth": 20,
+    "best_length": 2,
+    "best_cyclic": 2,
+    "reason": "beam search exhausted",
+    "elapsed": 5.238868798001931
+  },
+  "elapsed": 5.253281174002041
+}

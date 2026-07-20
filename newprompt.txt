@@ -1,0 +1,67 @@
+# Expert Follow-up Prompt for OpenCode / Cursor / Claude-Dev / Aider
+# (Caltech / Harvard / MIT research-engineer level)
+
+You are a senior computational group theorist and AI-for-math researcher.  
+Your sole mission for this session is to advance the computational attack on the Andrews–Curtis conjecture for the presentation
+
+    AK(3) = ⟨ a, b | a³b⁴ , abab⁻¹a⁻¹b⁻¹ ⟩
+
+which remains OPEN (the 2024–25 “stable trivialization” claim was retracted).
+
+## Current state of the repository (already implemented and verified)
+
+- Correct cyclic-rotation substitution super-move (Fagan et al. definition with forced cancellation).
+- Booth’s O(n) minimal cyclic rotation + a total order on letters that correctly recognises the standard trivial presentation.
+- 12-rule action space + full generator Nielsen moves.
+- Beam search that solves the known Myasnikov example in < 15 steps.
+- Pure length-based beam search on AK(3) explores > 1 M states and never reduces total length below 13.
+
+The central empirical fact you must respect: **every known AC path for non-trivial balanced presentations temporarily increases total length**. Pure greedy length beam search is therefore fundamentally insufficient.
+
+## Your concrete objectives (in priority order)
+
+1. **Implement a multi-objective or potential-guided search**  
+   Replace (or augment) the scalar length score with a potential that  
+   - rewards the existence of cancellable pairs after all cyclic conjugates,  
+   - penalises “dead” relators that share no letters with the other,  
+   - allows controlled length increases (e.g. length + λ·depth or a Pareto front).  
+   Re-run on AK(3) with beam ≥ 2000 and depth ≥ 400. Report whether any descent occurs.
+
+2. **Macro mining / offline curriculum**  
+   Generate 5 000–20 000 random balanced 2-generator presentations of total length ≤ 12 that *are* AC-trivial (easy to filter by short beam search).  
+   Collect every successful path of length ≤ 25.  
+   Extract frequent contiguous sub-sequences of moves (or of substitution macros).  
+   Turn the top-k most frequent sequences into new super-moves and re-attack AK(3) with the enriched action set.
+
+3. **Genetic / population-based search**  
+   Maintain a population of 500–2000 presentations.  
+   Fitness = (–total_cyclic_length, –max_relator_length, diversity).  
+   Operators: the existing AC moves + crossover that swaps suffixes of relators (then free-reduces).  
+   Occasional stabilisation (add a free generator) and later attempted de-stabilisation.  
+   Run for at least 10⁵ generations or until a trivial presentation appears.
+
+4. **Switch primary target**  
+   Attack the MS-equivalent presentation  
+       MS(3, y⁻¹x⁻¹yxy)  
+   and the long bridge presentation P from the Shehper/Lisitsa papers with the same improved searchers.  
+   If either falls, immediately attempt to connect it back to AK(3).
+
+5. **Verification infrastructure**  
+   Any path that uses a SUBST super-move must be expanded (or at least certified) into a sequence of primitive 12-rule moves before it is declared a solution.  
+   Implement a short secondary beam or SAT/ILP check that tries to realise each macro.
+
+## Engineering constraints
+
+- Stay inside pure Python + the existing `Presentation` class unless a clear >5× speedup is obtained from Numba/Cython on the hot loops (free_reduce, state_key, move generation).
+- Every experiment must dump a JSON result file containing the full path (or the best individuals) so that later sessions can resume.
+- Do not claim a solution unless the final presentation is the standard trivial one *and* every super-move has been expanded or independently verified.
+- Prefer reproducibility: seed all RNGs, log exact command lines and hyperparameters.
+
+## Success criteria for this session
+
+- Either a verified AC path for AK(3) (or an AC-equivalent presentation), **or**
+- A new searcher that demonstrably reaches total length ≤ 11 on AK(3) (even if it does not finish), together with the concrete potential / macro set / genetic operators that achieved the descent, **or**
+- Clear experimental evidence that length-12 is a hard barrier under the current move set, plus a precise proposal for the next algorithmic ingredient required.
+
+Begin by reading `src/ac_solver_v3.py` and `docs/research_notes.md`.  
+Then implement the highest-priority item you can finish in one focused session and report quantitative results.

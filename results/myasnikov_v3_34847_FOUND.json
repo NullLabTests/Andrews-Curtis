@@ -1,0 +1,58 @@
+{
+  "run_id": "myasnikov_v3_34847",
+  "found": true,
+  "presentation": "myasnikov",
+  "description": "STAB_REMOVE",
+  "params": {
+    "beam_width": 100,
+    "max_depth": 50,
+    "max_states": 200000,
+    "use_substitution": true,
+    "use_generator_moves": true,
+    "timeout": 120.0
+  },
+  "stats": {
+    "states_explored": 16899,
+    "depth": 7,
+    "reason": "found",
+    "elapsed": 2.8851550509934896
+  },
+  "elapsed": 2.8907407890001195,
+  "path": [
+    {
+      "move": "SUBST r1\u2190r0\u207b\u00b9 rot(1,4)",
+      "state": "\u27e8 a b  |  a\u00b7a\u00b7b\u207b\u00b9\u00b7b\u207b\u00b9\u00b7b\u207b\u00b9, bab\u207b\u00b9a\u207b\u00b9bba\u207b\u00b9 \u27e9",
+      "len": 12
+    },
+    {
+      "move": "SUBST r0\u2190r1 rot(1,3)",
+      "state": "\u27e8 a b  |  a\u00b7b\u207b\u00b9\u00b7a\u207b\u00b9\u00b7b\u00b7a\u00b7b\u207b\u00b9, bab\u207b\u00b9a\u207b\u00b9bba\u207b\u00b9 \u27e9",
+      "len": 13
+    },
+    {
+      "move": "GENMUL x1\u2192x1x2",
+      "state": "\u27e8 a b  |  a\u00b7b\u207b\u00b9\u00b7a\u207b\u00b9\u00b7b\u00b7a, b\u00b7a\u00b7b\u207b\u00b9\u00b7a\u207b\u00b9\u00b7b\u00b7a\u207b\u00b9 \u27e9",
+      "len": 11
+    },
+    {
+      "move": "SUBST r0\u2190r1\u207b\u00b9 rot(4,1)",
+      "state": "\u27e8 a b  |  a\u00b7b\u207b\u00b9\u00b7a, b\u00b7a\u00b7b\u207b\u00b9\u00b7a\u207b\u00b9\u00b7b\u00b7a\u207b\u00b9 \u27e9",
+      "len": 9
+    },
+    {
+      "move": "MUL r1\u00b7r0",
+      "state": "\u27e8 a b  |  a\u00b7b\u207b\u00b9\u00b7a, b\u00b7a\u00b7b\u207b\u00b9 \u27e9",
+      "len": 6
+    },
+    {
+      "move": "CONJ r1 by x1\u207b\u00b9",
+      "state": "\u27e8 a b  |  a\u00b7b\u207b\u00b9\u00b7a, a \u27e9",
+      "len": 4
+    },
+    {
+      "move": "STAB_REMOVE",
+      "state": "\u27e8 a  |  a\u207b\u00b9 \u27e9",
+      "len": 1
+    }
+  ]
+}
