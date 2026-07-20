@@ -1,0 +1,8 @@
+{
+  "found": false,
+  "depth": 299,
+  "states_explored": 134480,
+  "best_len": 13,
+  "best_cyclic": 13,
+  "elapsed": 60.03460988000006
+}

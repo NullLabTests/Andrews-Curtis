@@ -1,0 +1,26 @@
+{
+  "run_id": "ak3_v5_38211",
+  "found": false,
+  "presentation": "ak3",
+  "description": "AK(3) \u2014 OPEN primary target",
+  "params": {
+    "beam_width": 2000,
+    "max_depth": 500,
+    "max_states": 20000000,
+    "use_potential": true,
+    "use_substitution": true,
+    "use_generator_moves": true,
+    "bidirectional": false,
+    "timeout": 7200,
+    "seed": 0
+  },
+  "stats": {
+    "states_explored": 227299,
+    "depth": 500,
+    "best_length": 13,
+    "best_cyclic": 13,
+    "reason": "search exhausted",
+    "elapsed": 102.4146782530006
+  },
+  "elapsed": 102.49965369500569
+}

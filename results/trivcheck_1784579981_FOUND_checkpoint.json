@@ -1,0 +1,9 @@
+{
+  "found": true,
+  "stats": {
+    "states_explored": 49,
+    "depth": 3,
+    "reason": "found",
+    "elapsed": 0.009648744999140035
+  }
+}

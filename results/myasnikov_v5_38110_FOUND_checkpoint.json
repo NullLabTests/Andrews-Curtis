@@ -1,0 +1,10 @@
+{
+  "found": true,
+  "path_len": 1,
+  "stats": {
+    "states_explored": 50,
+    "depth": 1,
+    "reason": "found",
+    "elapsed": 0.012830879000830464
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "found": false,
+  "depth": 1,
+  "f_states": 55,
+  "b_states": 10,
+  "intersection": 0,
+  "best_len": 13,
+  "best_cyclic": 13,
+  "elapsed": 0.01763765599753242
+}

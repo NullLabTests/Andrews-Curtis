@@ -1,0 +1,32 @@
+{
+  "run_id": "myasnikov_v5_37884",
+  "found": true,
+  "presentation": "myasnikov",
+  "description": "INV:STAB_ADD",
+  "params": {
+    "beam_width": 300,
+    "max_depth": 30,
+    "max_states": 200000,
+    "use_potential": true,
+    "use_substitution": true,
+    "use_generator_moves": true,
+    "bidirectional": true,
+    "timeout": 90,
+    "seed": 0
+  },
+  "stats": {
+    "states_explored": 50,
+    "depth": 1,
+    "reason": "found",
+    "elapsed": 0.014894513005856425
+  },
+  "elapsed": 0.015545201000350062,
+  "path": [
+    {
+      "move": "INV:STAB_ADD",
+      "state": "\u27e8 a b x3  |  a, b, x3 \u27e9",
+      "len": 3,
+      "cyclic": 3
+    }
+  ]
+}

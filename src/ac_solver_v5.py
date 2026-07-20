@@ -504,10 +504,10 @@ class BidirectionalBeamSearcher:
 
             # Reporting
             now = time.monotonic()
+            inter = len(set(f_visited.keys()) & set(b_visited.keys()))
             if self.verbose and now - last_report > 15.0:
                 f_size = len(f_visited)
                 b_size = len(b_visited)
-                inter = len(set(f_visited.keys()) & set(b_visited.keys()))
                 print(
                     f"  [depth={depth+1:3d}  f_beam={len(f_frontier):4d}  "
                     f"b_beam={len(b_frontier):4d}  "

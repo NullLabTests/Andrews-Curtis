@@ -1,0 +1,80 @@
+{
+  "run_id": "myasnikov_v5_38164",
+  "found": true,
+  "presentation": "myasnikov",
+  "description": "INV:MUL r0\u00b7r1\u207b\u00b9",
+  "params": {
+    "beam_width": 300,
+    "max_depth": 30,
+    "max_states": 200000,
+    "use_potential": true,
+    "use_substitution": true,
+    "use_generator_moves": true,
+    "bidirectional": true,
+    "timeout": 90,
+    "seed": 42
+  },
+  "stats": {
+    "states_explored": 58073,
+    "depth": 9,
+    "reason": "found",
+    "elapsed": 35.36457616699772
+  },
+  "elapsed": 35.44482109299861,
+  "path": [
+    {
+      "move": "GENMUL x1\u2192x1x2",
+      "state": "\u27e8 a b  |  a\u00b7b\u00b7a\u00b7b\u207b\u00b9\u00b7b\u207b\u00b9, abbab\u207b\u00b9a\u207b\u00b9b\u207b\u00b9 \u27e9",
+      "len": 12,
+      "cyclic": 12
+    },
+    {
+      "move": "SUBST r1\u2190r0\u207b\u00b9 rot(2,3)",
+      "state": "\u27e8 a b  |  a\u00b7b\u00b7a\u00b7b\u207b\u00b9\u00b7b\u207b\u00b9, b\u00b7a\u00b7b\u207b\u00b9\u00b7a\u207b\u00b9\u00b7b\u00b7a\u207b\u00b9 \u27e9",
+      "len": 11,
+      "cyclic": 11
+    },
+    {
+      "move": "SUBST r1\u2190r0 rot(4,0)",
+      "state": "\u27e8 a b  |  a\u00b7b\u00b7a\u00b7b\u207b\u00b9\u00b7b\u207b\u00b9, ba\u207b\u00b9baab\u207b\u00b9b\u207b\u00b9 \u27e9",
+      "len": 12,
+      "cyclic": 10
+    },
+    {
+      "move": "SUBST r0\u2190r1 rot(1,1)",
+      "state": "\u27e8 a b  |  b\u00b7a\u00b7b\u207b\u00b9\u00b7a\u00b7a\u00b7b\u207b\u00b9, ba\u207b\u00b9baab\u207b\u00b9b\u207b\u00b9 \u27e9",
+      "len": 13,
+      "cyclic": 9
+    },
+    {
+      "move": "SUBST r1\u2190r0\u207b\u00b9 rot(6,3)",
+      "state": "\u27e8 a b  |  b\u00b7a\u00b7b\u207b\u00b9\u00b7a\u00b7a\u00b7b\u207b\u00b9, a\u207b\u00b9\u00b7b\u00b7a\u207b\u00b9 \u27e9",
+      "len": 9,
+      "cyclic": 7
+    },
+    {
+      "move": "INV:MUL r1\u00b7r0",
+      "state": "\u27e8 a b  |  a\u00b7a\u00b7b\u207b\u00b9, b\u00b7a\u00b7b\u207b\u00b9 \u27e9",
+      "len": 6,
+      "cyclic": 4
+    },
+    {
+      "move": "INV:MUL r0\u00b7r1",
+      "state": "\u27e8 a b  |  a\u00b7b\u207b\u00b9, b\u00b7a\u00b7b\u207b\u00b9 \u27e9",
+      "len": 5,
+      "cyclic": 3
+    },
+    {
+      "move": "INV:MUL r1\u00b7r0",
+      "state": "\u27e8 a b  |  a\u00b7b\u207b\u00b9, b \u27e9",
+      "len": 3,
+      "cyclic": 3
+    },
+    {
+      "move": "INV:MUL r0\u00b7r1\u207b\u00b9",
+      "state": "\u27e8 a b  |  a, b \u27e9",
+      "len": 2,
+      "cyclic": 2
+    }
+  ]
+}
