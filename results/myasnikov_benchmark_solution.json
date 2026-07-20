@@ -1,0 +1,73 @@
+{
+  "solution": [
+    {
+      "step": 1,
+      "move": "GENMUL x1\u2192x1x2",
+      "len": 12,
+      "cyclic": 12,
+      "state": "\u27e8 x1 x2  |  x1\u00b7x2\u00b7x1\u00b7x2\u207b\u00b9\u00b7x2\u207b\u00b9, x1x2x2x1x2\u207b\u00b9x1\u207b\u00b9x2\u207b\u00b9 \u27e9"
+    },
+    {
+      "step": 2,
+      "move": "SUBST r1\u2190r0\u207b\u00b9 rot(2,3)",
+      "len": 11,
+      "cyclic": 11,
+      "state": "\u27e8 x1 x2  |  x1\u00b7x2\u00b7x1\u00b7x2\u207b\u00b9\u00b7x2\u207b\u00b9, x2\u00b7x1\u00b7x2\u207b\u00b9\u00b7x1\u207b\u00b9\u00b7x2\u00b7x1\u207b\u00b9 \u27e9"
+    },
+    {
+      "step": 3,
+      "move": "SUBST r1\u2190r0 rot(4,0)",
+      "len": 12,
+      "cyclic": 10,
+      "state": "\u27e8 x1 x2  |  x1\u00b7x2\u00b7x1\u00b7x2\u207b\u00b9\u00b7x2\u207b\u00b9, x2x1\u207b\u00b9x2x1x1x2\u207b\u00b9x2\u207b\u00b9 \u27e9"
+    },
+    {
+      "step": 4,
+      "move": "SUBST r0\u2190r1 rot(1,1)",
+      "len": 13,
+      "cyclic": 9,
+      "state": "\u27e8 x1 x2  |  x2\u00b7x1\u00b7x2\u207b\u00b9\u00b7x1\u00b7x1\u00b7x2\u207b\u00b9, x2x1\u207b\u00b9x2x1x1x2\u207b\u00b9x2\u207b\u00b9 \u27e9"
+    },
+    {
+      "step": 5,
+      "move": "SUBST r1\u2190r0\u207b\u00b9 rot(6,3)",
+      "len": 9,
+      "cyclic": 7,
+      "state": "\u27e8 x1 x2  |  x2\u00b7x1\u00b7x2\u207b\u00b9\u00b7x1\u00b7x1\u00b7x2\u207b\u00b9, x1\u207b\u00b9\u00b7x2\u00b7x1\u207b\u00b9 \u27e9"
+    },
+    {
+      "step": 6,
+      "move": "INV:MUL r1\u00b7r0",
+      "len": 6,
+      "cyclic": 4,
+      "state": "\u27e8 x1 x2  |  x1\u00b7x1\u00b7x2\u207b\u00b9, x2\u00b7x1\u00b7x2\u207b\u00b9 \u27e9"
+    },
+    {
+      "step": 7,
+      "move": "INV:MUL r0\u00b7r1",
+      "len": 5,
+      "cyclic": 3,
+      "state": "\u27e8 x1 x2  |  x1\u00b7x2\u207b\u00b9, x2\u00b7x1\u00b7x2\u207b\u00b9 \u27e9"
+    },
+    {
+      "step": 8,
+      "move": "INV:MUL r1\u00b7r0",
+      "len": 3,
+      "cyclic": 3,
+      "state": "\u27e8 x1 x2  |  x1\u00b7x2\u207b\u00b9, x2 \u27e9"
+    },
+    {
+      "step": 9,
+      "move": "INV:MUL r0\u00b7r1\u207b\u00b9",
+      "len": 2,
+      "cyclic": 2,
+      "state": "\u27e8 x1 x2  |  x1, x2 \u27e9"
+    }
+  ],
+  "stats": {
+    "states_explored": 58073,
+    "depth": 9,
+    "reason": "found",
+    "elapsed": 34.731186928998795
+  }
+}

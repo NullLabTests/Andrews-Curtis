@@ -1,0 +1,23 @@
+Target: ms_ak3 — MS(3, y⁻¹x⁻¹yxy) ≅ AK(3)
+Start:  ⟨ x1 x2  |  x1⁻¹x2x2x2x1x2⁻¹x2⁻¹x2⁻¹x2⁻¹, x1⁻¹·x2⁻¹·x1⁻¹·x2·x1·x2 ⟩
+Mode:   forward  scoring=potential  nf=cyclic
+  [depth=  1  beam=  65  states=      65  len=15  cyclic=15  elapsed=0s]
+  [depth=  3  beam=2000  states=   94635  len=15  cyclic=14  elapsed=40s]
+  [depth=  4  beam=2000  states=  206668  len=15  cyclic=13  elapsed=95s]
+  [depth=  5  beam=2000  states=  294581  len=15  cyclic=13  elapsed=139s]
+  [depth=  6  beam=2000  states=  371126  len=15  cyclic=13  elapsed=184s]
+  [depth=  7  beam=2000  states=  446977  len=15  cyclic=13  elapsed=234s]
+  [depth=  8  beam=2000  states=  508421  len=15  cyclic=13  elapsed=268s]
+  [depth=  9  beam=2000  states=  578033  len=15  cyclic=13  elapsed=304s]
+  [depth= 10  beam=2000  states=  636216  len=15  cyclic=13  elapsed=340s]
+  [depth= 11  beam=2000  states=  711754  len=15  cyclic=13  elapsed=378s]
+  [depth= 12  beam=2000  states=  778961  len=15  cyclic=13  elapsed=405s]
+  [depth= 13  beam=2000  states=  862594  len=15  cyclic=13  elapsed=437s]
+  [depth= 14  beam=2000  states=  934008  len=15  cyclic=13  elapsed=468s]
+  [depth= 15  beam=2000  states= 1020861  len=15  cyclic=13  elapsed=505s]
+  [depth= 16  beam=2000  states= 1090487  len=15  cyclic=13  elapsed=540s]
+  [depth= 17  beam=2000  states= 1197028  len=15  cyclic=13  elapsed=577s]
+  [depth= 18  beam=2000  states= 1284884  len=15  cyclic=13  elapsed=612s]
+  [depth= 19  beam=2000  states= 1384277  len=15  cyclic=13  elapsed=655s]
+  [depth= 20  beam=2000  states= 1468515  len=15  cyclic=13  elapsed=693s]
+  [depth= 21  beam=2000  states= 1556119  len=15  cyclic=13  elapsed=736s]

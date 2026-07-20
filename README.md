@@ -22,7 +22,7 @@ The conjecture remains **open** (2026). It is widely believed to be **false**, b
 - **1965** — Conjecture proposed by Andrews and Curtis
 - **2003** — Perelman proves Poincaré conjecture (implies stable AC for thickenable presentations)
 - **2025** — Longest AC-simplification found: 8,634 moves for a Miller–Schupp presentation (Lisitsa)
-- **2026** — Conjecture remains open
+- **2026** — Computational search: AK(3) = ⟨a,b | a³b⁴, abab⁻¹a⁻¹b⁻¹⟩ resists ALL trivialization attempts (15M+ states, 9 configurations, up to depth 500). See [RESULTS.md](RESULTS.md).
 
 ## Repository Structure
 
@@ -39,7 +39,8 @@ The conjecture remains **open** (2026). It is widely believed to be **false**, b
 - **Stabilization** (AC4/AC5): adding/removing a generator+relator pair
 - **Weak AC conjecture**: allows stabilizations
 - **Thickenable presentations**: those whose 2-complex embeds in a 3-manifold (known to satisfy stable AC)
-- **Potential counterexamples**: Akbulut–Kirby series, Miller–Schupp series
+- **Potential counterexamples**: Akbulut–Kirby series, Miller–Schupp series, AK(3)
+- **Solver** (this repo): V5 merged solver with forward beam search, bidirectional meet-in-the-middle, substitution super-moves, weak/cyclic normal forms, novelty search, and macro mining
 
 ## References
 

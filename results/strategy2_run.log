@@ -1,0 +1,18 @@
+AK(3) Attack — Three parallel strategies
+PID: 30906
+Phase: 2
+
+═════════════════════════════════════════════════════════════════
+  STRATEGY 2: MS-equivalent presentations
+═════════════════════════════════════════════════════════════════
+
+  ── presentation_p: Bridge P (Lisitsa) ──
+      start len=23, cyclic=23
+  [depth=  1  beam= 143  states=     143  len=23  cyclic=21  elapsed=0s]
+  [depth=  3  beam=2000  states=  374219  len=23  cyclic=21  elapsed=74s]
+  [depth=  4  beam=2000  states=  551781  len=23  cyclic=21  elapsed=112s]
+  [depth=  5  beam=2000  states=  713055  len=23  cyclic=21  elapsed=160s]
+  [depth=  6  beam=2000  states=  829357  len=23  cyclic=21  elapsed=230s]
+  [depth=  7  beam=2000  states=  940374  len=23  cyclic=21  elapsed=314s]
+  [depth=  8  beam=2000  states= 1042675  len=23  cyclic=21  elapsed=397s]
+  [depth=  9  beam=2000  states= 1142634  len=23  cyclic=21  elapsed=482s]
