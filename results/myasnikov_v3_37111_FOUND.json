@@ -1,0 +1,83 @@
+{
+  "run_id": "myasnikov_v3_37111",
+  "found": true,
+  "presentation": "myasnikov",
+  "description": "STAB_REMOVE",
+  "params": {
+    "beam_width": 500,
+    "max_depth": 200,
+    "max_states": 2000000,
+    "use_substitution": false,
+    "use_generator_moves": true,
+    "timeout": 120.0
+  },
+  "stats": {
+    "states_explored": 35461,
+    "depth": 12,
+    "reason": "found",
+    "elapsed": 7.012973837001482
+  },
+  "elapsed": 7.032959894000669,
+  "path": [
+    {
+      "move": "GENMUL x1\u2192x1x2",
+      "state": "\u27e8 a b  |  a\u00b7b\u00b7a\u00b7b\u207b\u00b9\u00b7b\u207b\u00b9, abbab\u207b\u00b9a\u207b\u00b9b\u207b\u00b9 \u27e9",
+      "len": 12
+    },
+    {
+      "move": "CONJ r1 by x1",
+      "state": "\u27e8 a b  |  a\u00b7b\u00b7a\u00b7b\u207b\u00b9\u00b7b\u207b\u00b9, aabbab\u207b\u00b9a\u207b\u00b9b\u207b\u00b9a\u207b\u00b9 \u27e9",
+      "len": 14
+    },
+    {
+      "move": "MUL r1\u00b7r0",
+      "state": "\u27e8 a b  |  a\u00b7b\u00b7a\u00b7b\u207b\u00b9\u00b7b\u207b\u00b9, aabbab\u207b\u00b9b\u207b\u00b9b\u207b\u00b9 \u27e9",
+      "len": 13
+    },
+    {
+      "move": "CONJ r0 by x2",
+      "state": "\u27e8 a b  |  babab\u207b\u00b9b\u207b\u00b9b\u207b\u00b9, aabbab\u207b\u00b9b\u207b\u00b9b\u207b\u00b9 \u27e9",
+      "len": 15
+    },
+    {
+      "move": "MUL r1\u00b7r0\u207b\u00b9",
+      "state": "\u27e8 a b  |  babab\u207b\u00b9b\u207b\u00b9b\u207b\u00b9, a\u00b7a\u00b7b\u00b7a\u207b\u00b9\u00b7b\u207b\u00b9 \u27e9",
+      "len": 12
+    },
+    {
+      "move": "CONJ r0 by x1\u207b\u00b9",
+      "state": "\u27e8 a b  |  a\u00b7b\u00b7a\u00b7b\u207b\u00b9\u00b7b\u207b\u00b9, a\u00b7a\u00b7b\u00b7a\u207b\u00b9\u00b7b\u207b\u00b9 \u27e9",
+      "len": 10
+    },
+    {
+      "move": "CONJ r1 by x1",
+      "state": "\u27e8 a b  |  a\u00b7b\u00b7a\u00b7b\u207b\u00b9\u00b7b\u207b\u00b9, aaaba\u207b\u00b9b\u207b\u00b9a\u207b\u00b9 \u27e9",
+      "len": 12
+    },
+    {
+      "move": "MUL r1\u00b7r0",
+      "state": "\u27e8 a b  |  a\u00b7b\u00b7a\u00b7b\u207b\u00b9\u00b7b\u207b\u00b9, a\u00b7a\u00b7a\u00b7b\u207b\u00b9 \u27e9",
+      "len": 9
+    },
+    {
+      "move": "GENMUL x2\u2192x2x1",
+      "state": "\u27e8 a b  |  a\u00b7b\u00b7a\u00b7b\u207b\u00b9\u00b7a\u207b\u00b9\u00b7b\u207b\u00b9, a\u00b7a\u00b7b\u207b\u00b9 \u27e9",
+      "len": 9
+    },
+    {
+      "move": "GENMUL x2\u2192x2x1",
+      "state": "\u27e8 a b  |  abab\u207b\u00b9a\u207b\u00b9a\u207b\u00b9b\u207b\u00b9, a\u00b7b\u207b\u00b9 \u27e9",
+      "len": 9
+    },
+    {
+      "move": "GENMUL x2\u2192x2x1",
+      "state": "\u27e8 a b  |  abab\u207b\u00b9a\u207b\u00b9a\u207b\u00b9a\u207b\u00b9b\u207b\u00b9, b\u207b\u00b9 \u27e9",
+      "len": 9
+    },
+    {
+      "move": "STAB_REMOVE",
+      "state": "\u27e8 a  |  a\u00b7a\u00b7a\u207b\u00b9\u00b7a\u207b\u00b9\u00b7a\u207b\u00b9 \u27e9",
+      "len": 5
+    }
+  ]
+}
