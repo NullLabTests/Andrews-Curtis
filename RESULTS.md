@@ -12,10 +12,10 @@ AK(3) = ⟨a,b | a³b⁴, abab⁻¹a⁻¹b⁻¹⟩ is **not trivializable** unde
 |--------|------|-------|--------|----------|-------------|------|
 | AK(3) cyclic nf + subst + gen | 2000 | 500 | 227 299 | 13 | 13 | 102s |
 | AK(3) cyclic nf + subst + gen | 2000 | 500 | 1 868 077 | 13 | 13 | 1825s |
-| AK(3) nosub + gen | 3000 | 138+ | 3 229 259 | 13 | 13 | 989s |
+| AK(3) nosub + gen | 3000 | 420 | **10 014 630** | 13 | 13 | 2542s |
 | AK(3) weak nf + subst + gen | 2000 | 11 | 571 338 | 13 | 13 | 140s |
-| ms_ak3 cyclic nf + subst + gen | 2000 | 21+ | 1 556 119 | 15 | 13 | 736s |
-| presentation_p cyclic nf + subst + gen | 2000 | 9+ | 1 142 634 | 23 | 21 | 482s |
+| ms_ak3 cyclic nf + subst + gen | 2000 | 21 | 1 556 119 | 15 | 13 | 736s |
+| presentation_p cyclic nf + subst + gen | 2000 | 9 | 1 142 634 | 23 | 21 | 482s |
 
 ### 2. Bidirectional Search
 
@@ -77,7 +77,7 @@ Backward (depth 4, inverted):
 
 ### 1. AK(3) Total Length Invariant under Current Move Set
 
-No search configuration finds ANY AK(3)-derived presentation with total length < 13. Over 15M states explored across 9+ configs. This is robust:
+No search configuration finds ANY AK(3)-derived presentation with total length < 13. Over **25M states** explored across 10+ configs (including 10M in a single run at beam=3000, depth 420). This is robust:
 
 - **Weak normal form**: same plateau at len=13 (AK(3) relators are cyclically reduced)
 - **Cyclic canonical normal form**: same plateau
